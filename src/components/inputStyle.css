@@ -1,0 +1,48 @@
+.rye-input{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.rye-input-title{
+    display: inline-block;
+    position: relative;
+    width: 175px;
+    left: 0;
+}
+
+.rye-input-title:hover{
+    cursor: default;
+}
+
+.rye-input-area{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+input[type="checkbox"].rye-input-area{
+    width: 1em; /*Desired width*/
+    height: 1em; /*Desired height*/
+}
+
+input[type="number"].rye-input-area{
+    width: 2.5em; /*Desired width*/
+    border: transparent;
+    border-radius: 3px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="range"].rye-input-area{
+    width: 100%; /*Desired width*/
+    border: transparent;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

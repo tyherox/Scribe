@@ -1,0 +1,6 @@
+.separator{
+    border-bottom: solid 1px #b3b3b3;
+    width: calc(100% - 20px);
+    z-index: 3;
+    margin: auto;
+}

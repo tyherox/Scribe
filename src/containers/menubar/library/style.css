@@ -1,0 +1,223 @@
+.library-container {
+    position: relative;
+    width:100%;
+    height: calc(100% - 57px);
+    overflow: scroll;
+}
+
+.library-scroll {
+    position: relative;
+    width:100%;
+    height: calc(100% - 170px);
+    overflow: scroll;
+}
+
+.library-display{
+    background-color: white;
+    height: 100px;
+}
+
+.library-display-title{
+    color: #8D8D8D;
+    padding: 15px 15px 10px;
+    font-size: 100%;
+}
+
+.library-display-content{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.library-display-container {
+    display: table-cell;
+    text-align: right;
+}
+
+.library-display-button{
+    color: white;
+    padding: 2px 10px;
+    margin-left: 15px;
+}
+
+.library-toolbar {
+    height: 30px;
+    overflow: visible;
+    background-color: #E5E5E4;
+    position: relative;
+}
+
+.library-toolbar-transparent {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 30px;
+    overflow: visible;
+    background-color: transparent;
+    position: relative;
+}
+
+.library-toolbar-dropDown {
+    position: relative;
+    display: inline;
+    right: 0;
+}
+
+.library-toolbar-selectButton {
+    background-color: white;
+    color: #454545;
+    border-bottom: transparent solid 3px;
+}
+
+.library-toolbar-selectButton-selected {
+    background-color: white;
+    color: #0078D7;
+    border-bottom: #0078D7 solid 3px;
+}
+
+.library-toolbar-search{
+    position: relative;
+    height: 26px;
+    width: calc(100% - 43px);
+    line-height: 30px;
+    padding-left: 2px;
+    border: transparent solid 2px;
+    outline: none;
+    background-color: #F2F2F2;
+    transition: all .5s;
+    display: inline-block;
+}
+.library-toolbar-search:focus{
+    background-color: white;
+    border: #F2F2F2 solid 2px;
+}
+
+.library-item-default,
+.library-item-selected {
+    position: relative;
+    width: calc(100% - 10px);
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.library-item-selected:first-child,
+.library-item-default:first-child{
+    margin-top: 5px;
+}
+
+.library-item-default:hover,
+.library-item-selected:hover{
+    cursor: default;
+}
+
+.library-item-showOption,
+.library-item-hideOption{
+    height: 25px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    float: right;
+}
+
+.library-item-title{
+    position: relative;
+    height: 25px;
+    line-height: 30px;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent;
+    color: #454545;
+}
+
+.library-item-title:focus{
+    border-bottom-color: black;
+    background-color: white;
+}
+
+.library-item-showOption,
+.library-item-hideOption{
+    background-color: #EA005E;
+    color: white;
+    width: 25px;
+}
+
+.library-item-showOption{
+    opacity: 1;
+}
+
+.library-item-hideOption {
+    opacity: 0;
+}
+
+.library-addProject{
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    left: 220px;
+    border-radius: 50px;
+    background-color:  #EA005E;
+}
+
+
+.selectedIcon{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #EA005E;
+}
+
+
+.dropbtn {
+    font-size: 90%;
+    background-color: #EA005E;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #d70056;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 90%;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 5px;
+    z-index: 1;
+}
+
+.selectedA{
+    border-left: #EA005E solid 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}

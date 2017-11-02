@@ -1,0 +1,9 @@
+{
+    "presets": ["react"],
+    "plugins": [
+        "transform-react-jsx",
+        "syntax-object-rest-spread",
+        "transform-object-rest-spread",
+        "external-helpers"
+    ]
+}

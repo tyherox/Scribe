@@ -1,0 +1,73 @@
+.displayScroll{
+    position: relative;
+    margin-top: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 65px);
+    overflow: scroll;
+}
+
+.display-layout{
+    position: relative;
+}
+
+.display-layoutItem{
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: white;
+    width: calc(100% - 20px);
+    height: 160px;
+    top: -25px;
+    z-index: 2;
+}
+
+.display-layoutTitle{
+    position: relative;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #2D98E0;
+    background-color: transparent;
+    text-align: center;
+    width: calc(100% - 20px);
+    top: -25px;
+}
+
+.display-layoutDelete{
+    position: relative;
+    float:right;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: red;
+    z-index: 3;
+}
+
+.display-addLayoutItem{
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: white;
+    width: calc(100% - 20px);
+    height: 160px;
+    z-index: 2;
+}
+
+.display-widgetItem{
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: white;
+    width: calc(100% - 20px);
+    height: 160px;
+    z-index: 2;
+}

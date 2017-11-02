@@ -1,0 +1,34 @@
+.rye-collapsiblePane{
+    display: block;
+    margin-bottom: 10px;
+    overflow: scroll;
+    transition: all .5s ease;
+}
+
+.rye-collapsiblePane-topBar{
+    position: relative;
+    margin-bottom: 10px;
+    height: 25px;
+    line-height: 25px;
+    background-color: gray;
+}
+
+.rye-collapsiblePane-topBar-title{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+.rye-collapsiblePane-topBar-icon{
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height:100%;
+}

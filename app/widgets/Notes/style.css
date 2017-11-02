@@ -1,0 +1,124 @@
+#id2 {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+#id2-scrollPane {
+
+    position: relative;
+
+    width: 100%;
+    height: calc(100% - 35px);
+
+    overflow: scroll;
+}
+
+#id2-noteList{
+    position: relative;
+
+    padding-bottom: 60px;
+
+    overflow: visible;
+
+    background: transparent;
+
+    transition: all .5s ease;
+
+    z-index: 1;
+}
+
+.id2-note{
+
+    position: absolute;
+
+    top: -100px;
+    left: 5px;
+
+    height: 100px;
+    min-height: 100px;
+    width: calc(100% - 10px);
+
+    overflow: hidden;
+
+    background-color: #efeae8;
+
+    transition: all .5s ease;
+    transform: translate(0px, 0px);
+    z-index: -1;
+
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.id2-toolbar{
+
+    position: relative;
+
+    width:calc(100% - 10px);
+    height:25px;
+    display: block;
+    z-index: 1;
+
+    font-size: 12px;
+    text-align: left;
+
+    overflow: visible;
+}
+
+.id2-editor{
+    position: relative;
+
+    text-align: left;
+
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.id2-handler{
+    float: left;
+
+    background: gray;
+}
+
+.id2-title{
+
+    margin-top: 2px;
+
+    float: left;
+    font-size: 15px;
+    line-height: 21px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.id2-note:hover{
+    cursor: text;
+}
+
+#id2-addButton{
+
+    position: fixed;
+    top: calc(100% - 53px);
+    left: calc(100% - 53px);
+
+    z-index: 5;
+
+    width: 48px;
+    height: 48px;
+
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 48px;
+}
+
+#id2-inputField {
+    margin: 5px;
+    z-index: 10;
+    width: calc(100% - 20px);
+}

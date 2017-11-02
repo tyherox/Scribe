@@ -1,0 +1,103 @@
+#menuBar{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+#overlay{
+    z-index: 1;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    height: calc(100vh - 35px);
+    width: 100vw;
+}
+
+#menuBar-currentProject{
+    position: relative;
+    top: -3px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    height: calc(100% - 5px);
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#menuBar-currentProject:hover{
+    /*background-color: gainsboro;*/
+}
+
+.menuBar-actionButtons{
+    position: relative;
+    float: right;
+    outline: none;
+    border: none;
+    height: 100%;
+    margin-right: 20px;
+    font-size: 30px;
+    background-color: white;
+}
+
+.menuBar-actionButtons:hover{
+    cursor: pointer;
+}
+
+#menuBar-subMenu{
+    position:absolute;
+    top:35px;
+    left:0px;
+    height: calc(100vh - 35px);
+    width: 280px;
+    background-color: white;
+    z-index: 10;
+}
+
+#subMenu{
+    position: relative;
+    width: calc(100% - 25px);
+    height: 100%;
+    padding-left: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.subMenu-title{
+    display: inline-block;
+    font-size: 150%;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: black;
+}
+
+.subMenu-title-tools{
+    float: right;
+    padding: 5px;
+}
+
+.subMenu-enter{
+    transform: translate(-100%);
+}
+
+.subMenu-enter.subMenu-enter-active{
+    transform: translate(0%);
+    transition: transform .25s ease-in-out;
+}
+
+.subMenu-leave {
+    transform: translate(0%);
+}
+
+.subMenu-leave.subMenu-leave-active {
+    transform: translate(-100%);
+    transition: transform .25s ease-in-out;
+}

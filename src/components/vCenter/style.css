@@ -1,0 +1,9 @@
+.vCenter-outer{
+    display: inline-table;
+    height: 100%;
+}
+
+.vCenter-inner{
+    display: table-cell;
+    vertical-align: middle;
+}

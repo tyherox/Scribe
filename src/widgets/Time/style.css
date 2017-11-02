@@ -1,0 +1,44 @@
+#timeWidget{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#timeWidget-toolbar{
+    position: relative;
+    height: 25px;
+    width: 100%;
+}
+
+#timeWidget-time{
+    vertical-align: middle;
+    position: relative;
+    height: calc((100% - 25px) / 2);
+    width: 100%;
+    font-size: 250%;
+}
+
+#timeWidget-date{
+    vertical-align: middle;
+    position: relative;
+    height: calc((100% - 55px) / 2);
+    width: calc(100% - 20px);
+    text-align: right;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+#timeWidget-date-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.timeWidget-icon{
+    width: 22px;
+    height: 22px;
+    background: gainsboro;
+    margin-left: calc((50% - 25px) / 2);
+    margin-right: calc((50% - 25px) / 2);
+    border-radius: 22px;
+}
